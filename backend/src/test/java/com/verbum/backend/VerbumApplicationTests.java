@@ -1,10 +1,10 @@
-package com.blog.backend;
+package com.verbum.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackendApplicationTests {
+class VerbumApplicationTests {
 
 	@Test
 	void contextLoads() {

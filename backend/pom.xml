@@ -11,7 +11,7 @@
 	<groupId>com.blog</groupId>
 	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backend</name>
+	<name>Verbum</name>
 	<description>Plataforma de blog</description>
 	<url/>
 	<licenses>
