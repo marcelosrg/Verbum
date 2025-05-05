@@ -27,6 +27,6 @@ public class UserServices {
 
     public List<ResponseUserDto> getAllUsers(){
         var users = userRepository.findAll();
-        return this.userMapper.UserToListUserDto(users).stream().collect(Collectors.toList());
+        return this.userMapper.UserToListUserDto(users);
     }
 }
