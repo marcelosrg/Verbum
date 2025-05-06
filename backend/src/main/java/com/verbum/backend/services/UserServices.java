@@ -6,6 +6,7 @@ import com.verbum.backend.mapper.UserMapper;
 import com.verbum.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.text.MessageFormat;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,6 +28,10 @@ public class UserServices {
 
     public List<ResponseUserDto> getAllUsers(){
         var users = userRepository.findAll();
+        return this.userMapper.UserToListUserDto(users);
+    }
+    public List<ResponseUserDto> getByName(String userName){
+        var users = userRepository.findByNameContainingIgnoreCase(userName);
         return this.userMapper.UserToListUserDto(users);
     }
 }
