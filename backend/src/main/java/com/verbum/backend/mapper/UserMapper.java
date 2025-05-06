@@ -11,5 +11,7 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface UserMapper {
     User RequestUserDtoToUser(RequestUserDto requestUserDto);
+    RequestUserDto UserToRequestUserDto(User user);
+    User UpdateUser(ResponseUserDto responseUserDto);
     List<ResponseUserDto> UserToListUserDto(List<User> user);
 }
