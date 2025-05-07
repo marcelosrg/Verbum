@@ -1,13 +1,9 @@
 package com.verbum.backend.dto;
 
-import java.util.UUID;
-
-public record ResponseUserDto (
-        UUID id,
+public record UpdateUserDto(
         String name,
         String email,
+        String password,
         String biography,
-        String image
-){
-
+        String image) {
 }
