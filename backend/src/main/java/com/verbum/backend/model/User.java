@@ -11,33 +11,36 @@ import java.util.UUID;
 
 @Entity(name = "USUARIO")
 @Data
+
 @EntityListeners(AuditingEntityListener.class)
+
 public class User {
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name="IDUSUARIO", unique = true, nullable = false)
     @Id
+    @Column(name="ID")
     private UUID id;
-
-    @Column(name = "NOME",nullable = false)
+    @Column(name = "NOME")
     private String name;
 
-    @Column(name = "EMAIL", unique = true, nullable = false)
+    @Column(name = "EMAIL")
     private String email;
 
-    @Column(name = "PASSWORD", nullable = false)
+    @Column(name = "SENHA")
     private String password;
 
-    @Column(name = "BIOGRAFIA", nullable = true)
+
+    @Column(name = "BIO")
     private String biography;
 
-    @Column(name = "PROFILEURL", nullable = true)
+    @Column(name = "FOTO_PERFIL")
     private String image;
 
+
     @CreatedDate
-    @Column(name = "CREATED_AT")
+    @Column(name="CREATED_AT")
     private LocalDateTime created_at;
 
     @LastModifiedDate
-    @Column(name = "UPDATED_AT")
+    @Column(name="UPDATED_AT")
     private LocalDateTime updated_at;
 }
