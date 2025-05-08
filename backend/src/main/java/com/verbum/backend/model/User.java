@@ -11,7 +11,11 @@ import java.util.UUID;
 
 @Entity(name = "USUARIO")
 @Data
+<<<<<<< HEAD
 
+=======
+@EntityListeners(AuditingEntityListener.class)
+>>>>>>> c812dc4187715d75657783daf5b4f503f4d0751a
 public class User {
     @GeneratedValue(strategy = GenerationType.UUID)
     @Column(name="IDUSUARIO", unique = true, nullable = false)
@@ -33,4 +37,14 @@ public class User {
     @Column(name = "PROFILEURL", nullable = true)
     private String image;
 
+<<<<<<< HEAD
+=======
+    @CreatedDate
+    @Column(name = "CREATED_AT")
+    private LocalDateTime created_at;
+
+    @LastModifiedDate
+    @Column(name = "UPDATED_AT")
+    private LocalDateTime updated_at;
+>>>>>>> c812dc4187715d75657783daf5b4f503f4d0751a
 }
