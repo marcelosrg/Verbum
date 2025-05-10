@@ -1,8 +1,4 @@
-package com.verbum.backend.dto;
-
-import com.verbum.backend.model.User;
-
-import java.time.LocalDateTime;
+package com.verbum.backend.dto.user;
 
 public record RequestUserDto(
         String name,

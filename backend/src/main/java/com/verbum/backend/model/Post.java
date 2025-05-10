@@ -31,7 +31,7 @@ public class Post {
     private Boolean published = false;
 
     @Column(name = "CAPA_IMAGEM")
-    private String coverImage;
+    private String urlImage;
 
     @CreatedDate
     @Column(name = "CREATED_AT")

@@ -1,4 +1,4 @@
-package com.verbum.backend.dto;
+package com.verbum.backend.dto.user;
 
 import java.util.UUID;
 

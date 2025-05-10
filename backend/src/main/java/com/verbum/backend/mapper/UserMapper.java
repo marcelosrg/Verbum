@@ -1,8 +1,8 @@
 package com.verbum.backend.mapper;
 
-import com.verbum.backend.dto.RequestUserDto;
-import com.verbum.backend.dto.ResponseUserDto;
-import com.verbum.backend.dto.UpdateUserDto;
+import com.verbum.backend.dto.user.RequestUserDto;
+import com.verbum.backend.dto.user.ResponseUserDto;
+import com.verbum.backend.dto.user.UpdateUserDto;
 import com.verbum.backend.model.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
