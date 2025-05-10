@@ -1,12 +1,10 @@
 package com.verbum.backend.controller;
 
-import com.verbum.backend.dto.RequestUserDto;
-import com.verbum.backend.dto.ResponseUserDto;
+import com.verbum.backend.dto.user.RequestUserDto;
+import com.verbum.backend.dto.user.ResponseUserDto;
 
-import com.verbum.backend.dto.UpdateUserDto;
+import com.verbum.backend.dto.user.UpdateUserDto;
 import com.verbum.backend.services.UserServices;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
